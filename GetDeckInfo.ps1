@@ -178,9 +178,9 @@ write-host "Deck2:" $deck2
 write-host "Deck3:" $deck3
 write-host "Deck4:" $deck4
 #write output to files - one for each deck
-$deck1 | Out-File c:\OBS\Deck1.txt
-$deck2 | Out-File c:\OBS\Deck2.txt
-$deck3 | Out-File c:\OBS\Deck3.txt
-$deck4 | Out-File c:\OBS\Deck4.txt
+$deck1 | Out-File .\Deck1.txt
+$deck2 | Out-File .\Deck2.txt
+$deck3 | Out-File .\Deck3.txt
+$deck4 | Out-File .\Deck4.txt
 }
 Until ($TimeNow -ge $TimeEnd)
