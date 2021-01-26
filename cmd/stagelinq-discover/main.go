@@ -10,49 +10,37 @@ import (
 const (
 	appName    = "Icedream StagelinQ Receiver"
 	appVersion = "0.0.0"
-	timeout    = 5 * time.Second
+	timeout    = 4 * time.Second
 )
 
 var stateValues = []string{
 	stagelinq.EngineDeck1Play,
 	stagelinq.EngineDeck1PlayState,
-	stagelinq.EngineDeck1PlayStatePath,
+	stagelinq.EngineDeck1CurrentBPM,
 	stagelinq.EngineDeck1TrackArtistName,
-	stagelinq.EngineDeck1TrackTrackNetworkPath,
-	stagelinq.EngineDeck1TrackSongLoaded,
 	stagelinq.EngineDeck1TrackSongName,
-	stagelinq.EngineDeck1TrackTrackData,
-	stagelinq.EngineDeck1TrackTrackName,
+	stagelinq.MixerCH1faderPosition,  
 
 	stagelinq.EngineDeck2Play,
 	stagelinq.EngineDeck2PlayState,
-	stagelinq.EngineDeck2PlayStatePath,
+	stagelinq.EngineDeck2CurrentBPM,
 	stagelinq.EngineDeck2TrackArtistName,
-	stagelinq.EngineDeck2TrackTrackNetworkPath,
-	stagelinq.EngineDeck2TrackSongLoaded,
 	stagelinq.EngineDeck2TrackSongName,
-	stagelinq.EngineDeck2TrackTrackData,
-	stagelinq.EngineDeck2TrackTrackName,
-
+	stagelinq.MixerCH2faderPosition, 
+	
 	stagelinq.EngineDeck3Play,
 	stagelinq.EngineDeck3PlayState,
-	stagelinq.EngineDeck3PlayStatePath,
+	stagelinq.EngineDeck3CurrentBPM,
 	stagelinq.EngineDeck3TrackArtistName,
-	stagelinq.EngineDeck3TrackTrackNetworkPath,
-	stagelinq.EngineDeck3TrackSongLoaded,
 	stagelinq.EngineDeck3TrackSongName,
-	stagelinq.EngineDeck3TrackTrackData,
-	stagelinq.EngineDeck3TrackTrackName,
+	stagelinq.MixerCH3faderPosition, 
 
 	stagelinq.EngineDeck4Play,
 	stagelinq.EngineDeck4PlayState,
-	stagelinq.EngineDeck4PlayStatePath,
+	stagelinq.EngineDeck4CurrentBPM,
 	stagelinq.EngineDeck4TrackArtistName,
-	stagelinq.EngineDeck4TrackTrackNetworkPath,
-	stagelinq.EngineDeck4TrackSongLoaded,
 	stagelinq.EngineDeck4TrackSongName,
-	stagelinq.EngineDeck4TrackTrackData,
-	stagelinq.EngineDeck4TrackTrackName,
+	stagelinq.MixerCH4faderPosition, 
 }
 
 func makeStateMap() map[string]bool {
