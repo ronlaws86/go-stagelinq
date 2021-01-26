@@ -161,7 +161,7 @@ else
 $artd = 'Artist: ' + $art4
 $titled = 'Title: ' + $title4 
 $bpmd = 'BPM: ' + $bpmdisp4 
-#below can be uncommented if you want the text file to have each value on a new line - comment out line 135
+#below can be uncommented if you want the text file to have each value on a new line - comment out line 166
 #$deck4 = @('Deck - 4: Now Playing: ',$artd,$titled,$bpmd)
 $deck4 = '    Now Playing: '+ $art4 +'- ' + $title4 + 'BPM: ' + $bpmdisp4
 }
